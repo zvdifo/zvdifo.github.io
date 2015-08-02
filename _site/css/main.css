@@ -64,10 +64,8 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-  color: #FF69B4;
+  color: #ff1d8e;
   text-decoration: none; }
-  a:visited {
-    color: #ff1d8e; }
   a:hover {
     color: #4A4A4A;
     text-decoration: none; }
@@ -358,6 +356,18 @@ li.tag {
     margin: 7px; }
   li.tag > a:hover {
     color: #e8e8e8; }
+
+/*
+* About
+*/
+ul.contact-list svg {
+  border: 2px solid #fff;
+  padding: 2px;
+  text-align: center; }
+ul.contact-list svg:hover {
+  background-color: pink;
+  border-radius: 20px;
+  transition: background 0.2s, color 0.2s; }
 
 /**
  * Syntax highlighting styles
