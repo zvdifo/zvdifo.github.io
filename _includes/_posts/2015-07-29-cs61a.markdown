@@ -1,0 +1,30 @@
+---
+layout: post
+title:  "学习Berkeley CS61A(Using Python)"
+date:   2015-08-10 04:53:55
+categories: python
+---
+开始学习UC Berkeley的CS61A，曾经看过MIT86年的SICP视频，讲得很好但是语言是scheme，没做练习, 而且初接触编程对许多概念都理解得非常模糊。这次选上CS61A是python教的,有四个大的projects方便练习理解。除了视频练习还配套老版SICP的书在看。
+
+
+<!-- more -->
+To evaluate a combination, do the following:
+1. Evaluate the subexpressions of the combination.
+2. Apply the procedure that is the value of the leftmost subexpression(the operate)to the arguments that are the values of the other subexpressions(the operaands).
+perform the evaluation process on each element of the combination first, in order to accomplish the evaluation process. Thus,the evaluation rule is recursive in nature: that is, it includes, the need to invoke the rule itself.
+
+print and none
+当python中执行一般的pure functions时，只会返回value.
+当python中执行print即non-pure function时，会产生side effects，即除了会return一个空值，还会把输入的值直接倒出来。而空值在python中都用none表示。
+![cs106a1]({{site.url}}/assets/images/cs61a1.png).
+
+在执行这段代码时，print(print(1),print(2))经历了如下过程。注意这张图应该是从上往下，再从下往上的。这里又牵涉到程序运行的问题。我们分解一个程序的运行过程要注意一层层划分直到能得到一个值，但是更要注意往下划分的目的是要拿到值以后往上传输回去。evaluate a combination实际上是一个迭代的过程。
+
+往下运行到底时，print产生的side effect倒出了"1"和"2"，也分别给上层返回了一个value：none. 最外层也是最后执行的print函数接受了这两个value，也产生了一个side effect，倒出了"none none"。return none。所以最后的结果就是：
+1
+2
+none none
+![cs106a2]({{site.url}}/assets/images/cs61a2.png).
+
+
+

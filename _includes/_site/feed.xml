@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>zvdifo | blog</title>
+    <description>© 2015 zvdifo. Powered by Jekyll
+</description>
+    <link>localhost:4000/</link>
+    <atom:link href="localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Mon, 17 Aug 2015 19:44:05 -0700</pubDate>
+    <lastBuildDate>Mon, 17 Aug 2015 19:44:05 -0700</lastBuildDate>
+    <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>学习Berkeley CS61A(Using Python)</title>
+        <description>&lt;p&gt;开始学习UC Berkeley的CS61A，曾经看过MIT86年的SICP视频，讲得很好但是语言是scheme，没做练习, 而且初接触编程对许多概念都理解得非常模糊。这次选上CS61A是python教的,有四个大的projects方便练习理解。除了视频练习还配套老版SICP的书在看。&lt;/p&gt;
+
+&lt;!-- more --&gt;
+&lt;p&gt;To evaluate a combination, do the following:
+1. Evaluate the subexpressions of the combination.
+2. Apply the procedure that is the value of the leftmost subexpression(the operate)to the arguments that are the values of the other subexpressions(the operaands).
+perform the evaluation process on each element of the combination first, in order to accomplish the evaluation process. Thus,the evaluation rule is recursive in nature: that is, it includes, the need to invoke the rule itself.&lt;/p&gt;
+
+&lt;p&gt;print and none
+当python中执行一般的pure functions时，只会返回value.
+当python中执行print即non-pure function时，会产生side effects，即除了会return一个空值，还会把输入的值直接倒出来。而空值在python中都用none表示。
+&lt;img src=&quot;localhost:4000/assets/images/cs61a1.png&quot; alt=&quot;cs106a1&quot; /&gt;.&lt;/p&gt;
+
+&lt;p&gt;在执行这段代码时，print(print(1),print(2))经历了如下过程。注意这张图应该是从上往下，再从下往上的。这里又牵涉到程序运行的问题。我们分解一个程序的运行过程要注意一层层划分直到能得到一个值，但是更要注意往下划分的目的是要拿到值以后往上传输回去。evaluate a combination实际上是一个迭代的过程。&lt;/p&gt;
+
+&lt;p&gt;往下运行到底时，print产生的side effect倒出了”1”和”2”，也分别给上层返回了一个value：none. 最外层也是最后执行的print函数接受了这两个value，也产生了一个side effect，倒出了”none none”。return none。所以最后的结果就是：
+1
+2
+none none
+&lt;img src=&quot;localhost:4000/assets/images/cs61a2.png&quot; alt=&quot;cs106a2&quot; /&gt;.&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 09 Aug 2015 21:53:55 -0700</pubDate>
+        <link>localhost:4000/python/2015/08/09/cs61a.html</link>
+        <guid isPermaLink="true">localhost:4000/python/2015/08/09/cs61a.html</guid>
+        
+        
+        <category>python</category>
+        
+      </item>
+    
+      <item>
+        <title>UI/UX resources introduced by Udacity</title>
+        <description>&lt;p&gt;前段时间上过Udacity一门新的UI/UX课，老师给了非常多学习资源，以下做个简单总结,分类很全。都是英文文章，以后可能会挑一些翻译。&lt;/p&gt;
+
+&lt;!-- more --&gt;
+&lt;p&gt;1) &lt;code&gt;Common Design Elements&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Below are some common terms that you’ll encounter when discussing the design of webpages and apps. Review these terms before watching the next video.
+copy&lt;/p&gt;
+
+&lt;p&gt;Refers to written material included in your product (in contrast to photographs or other elements of layout).
+headline&lt;/p&gt;
+
+&lt;p&gt;Words that communicate what the company or product does; different headlines will work for different products and user goals; choose wisely.&lt;/p&gt;
+
+&lt;p&gt;resource: &lt;a href=&quot;https://blog.kissmetrics.com/ultimate-home-page-headline/&quot;&gt;The Ultimate Home Page Headline&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;tagline&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Taglines contain phrases that explain the key benefits and purpose of your product. Taglines are critical because people scan websites, especially first time visitors who are just beginning to understand your product.&lt;/p&gt;
+
+&lt;p&gt;resource: &lt;a href=&quot;http://intuitivewebsites.com/articles/website-taglines/&quot;&gt;Website Taglines&lt;/a&gt; 
+resource: &lt;a href=&quot;http://www.1stwebdesigner.com/20-great-headline-copy/&quot;&gt;Creating a Memorable Headline/Tagline: 20 Great Examples&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;value proposition&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;A promise of value to be delivered and acknowledged and a belief from the customer that value will be delivered and experienced. A value proposition can apply to an entire organization, or parts thereof, or customer accounts, or products or services.
+below the fold&lt;/p&gt;
+
+&lt;p&gt;The content area of a screen that is not visible without scrolling; many website home pages contain additional content “below the fold”.
+call to action (CTA)&lt;/p&gt;
+
+&lt;p&gt;An instruction to the audience to provoke an immediate response, usually using an imperative verb such as “call now”, “sign up”, “buy now”, or “visit a store today”; these often take the form of buttons.&lt;/p&gt;
+
+&lt;p&gt;resource: &lt;a href=&quot;http://www.copyblogger.com/call-to-action-buttons/&quot;&gt;Improving Conversations: Call to Action Buttons&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;2) Homepage design&lt;/p&gt;
+
+&lt;p&gt;http://discussions.udacity.com/t/lesson-2-homepage-design/20405&lt;/p&gt;
+
+&lt;p&gt;15 Examples of Brilliant Homepages&lt;/p&gt;
+
+&lt;p&gt;5 Homepage Design Best Practices&lt;/p&gt;
+
+&lt;p&gt;9 Steps to Optimize Your Homepage&lt;/p&gt;
+
+&lt;p&gt;The Homepages of 20 SaaS (Software as a Service) Startups&lt;/p&gt;
+
+&lt;p&gt;Design Practices to Avoid on Your Homepage&lt;/p&gt;
+
+&lt;p&gt;When Design Best Practices Become Performance Worst Practices&lt;/p&gt;
+
+&lt;p&gt;Improving Conversions: Call to Action Buttons&lt;/p&gt;
+
+&lt;p&gt;A/B Testing Headlines on the Highrise Signup Page&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;3) Sign Ups and Onboarding&lt;/p&gt;
+
+&lt;p&gt;How Popular Website Onboard Users&lt;/p&gt;
+
+&lt;p&gt;UX Archive: Onboarding&lt;/p&gt;
+
+&lt;p&gt;4 Ways to Design Better Login Screens (GoSquared Example)&lt;/p&gt;
+
+&lt;p&gt;Testing Yammers Signup Flow&lt;/p&gt;
+
+&lt;p&gt;5 UX Antipatterns to Avoid with Signups&lt;/p&gt;
+
+&lt;p&gt;First Time UX&lt;/p&gt;
+
+&lt;p&gt;Design Review Podcast: Onboarding&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;4) Forms&lt;/p&gt;
+
+&lt;p&gt;Signup and payment forms require you to get and verify information from the user. There’s lots of advice for creating forms, and we’ve curated some of the best resources and examples from existing products and the web&lt;/p&gt;
+
+&lt;p&gt;First, keep it simple. Users are more likely to complete forms, signup, and pay, when those forms are easy and intuitive. Clear descriptions, vertical layouts, pre-populated forms, examples, and clear calls to action can help users make sense of the form and make them more willing to spend the time to fill them out. This also means that you should only ask for as much information as you need.&lt;/p&gt;
+
+&lt;p&gt;Second, validate user input and provide feedback Next, you can increase the chance that users succeed by designing forms by checking what user’s type and by providing corrective feedback, examples, and even suggestions. Is the user’s phone number in the correct format? Did the user choose a username that is already taken? Does the form verify input after the user finishes typing in each box? These are essential features of your form that can drive up the number of successful users.&lt;/p&gt;
+
+&lt;p&gt;Example of inline validated form&lt;/p&gt;
+
+&lt;p&gt;Finally, always test your forms. You can test the form yourself. Some teams have done this by a role play between a user and a browser. The browser can only respond with the copy on the page. Is the form easy to complete? Are formatting options clear? Did the user get stuck, frustrated, or lost?&lt;/p&gt;
+
+&lt;p&gt;For more information on designing forms, check out these awesome resources:
+Why Details Matter in Payments: Conversions!&lt;/p&gt;
+
+&lt;p&gt;The $300 Million Button On BestBuy.com, the small change of allowing people to skip sign-up during checkout resulted in $300 million extra revenue per year.&lt;/p&gt;
+
+&lt;p&gt;Double Conversion Rates with Optional Fields ClickTale doubled their sign-up conversions from 40% to 80% with a simple change of adding an explicit and very visible “optional” label to the phone number input box.
+Effective Form Design&lt;/p&gt;
+
+&lt;p&gt;Optimizing Forms for Greater Conversion
+Extensive Guide to Web Form Usability (Smashing Magazine)
+Designing Form Validation the Right Way
+The Top 5 Books about Form Design
+Focus on Mobile Forms&lt;/p&gt;
+
+&lt;p&gt;Mobile Form Design Strategies
+Removing Stumbling Blocks in Mobile Forms
+21 First Class Examples of Effective Web Form Design
+Payment Forms&lt;/p&gt;
+
+&lt;p&gt;User Experience and the Credit Card Payment Form
+Checkout Flows&lt;/p&gt;
+
+&lt;p&gt;The First Step of Checkout (KISSmetrics blog)
+Fundamental Guidelines of E-Commerce Checkout Design
+5 Design Tips to Prevent Shopping Cart Abandonment
+How to Design an Ecommerce Checkout Flow that Converts&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;5) Notifications&lt;/p&gt;
+
+&lt;p&gt;The Psychology of Notifications&lt;/p&gt;
+
+&lt;p&gt;User Friendly Notifications&lt;/p&gt;
+
+&lt;p&gt;Rethinking On Site Notifications&lt;/p&gt;
+
+&lt;p&gt;Notifications are a UX AntiPattern (Use Notifications for Positive Habits)&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;6) user feedback and ratings&lt;/p&gt;
+
+&lt;p&gt;Better User Research through Surveys&lt;/p&gt;
+
+&lt;p&gt;Incorporating Customer Feedback into Your Startup Strategy&lt;/p&gt;
+
+&lt;p&gt;The Right Way to Ask Users to Review Your App (Circa News)&lt;/p&gt;
+
+&lt;p&gt;Get Better Qualitative Data on Your User Experience with Microfeedback&lt;/p&gt;
+
+&lt;p&gt;Increase Mobile App Reviews&lt;/p&gt;
+
+&lt;p&gt;Increasing Customer Retention&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;7) Homepages&lt;/p&gt;
+
+&lt;p&gt;http://discussions.udacity.com/t/lesson-2-homepage-design/20405&lt;/p&gt;
+
+&lt;p&gt;15 Examples of Brilliant Homepages&lt;/p&gt;
+
+&lt;p&gt;5 Homepage Design Best Practices&lt;/p&gt;
+
+&lt;p&gt;9 Steps to Optimize Your Homepage&lt;/p&gt;
+
+&lt;p&gt;The Homepages of 20 SaaS (Software as a Service) Startups&lt;/p&gt;
+
+&lt;p&gt;Design Practices to Avoid on Your Homepage&lt;/p&gt;
+
+&lt;p&gt;When Design Best Practices Become Performance Worst Practices&lt;/p&gt;
+
+&lt;p&gt;Improving Conversions: Call to Action Buttons&lt;/p&gt;
+
+&lt;p&gt;A/B Testing Headlines on the Highrise Signup Page&lt;/p&gt;
+
+&lt;p&gt;User Experience Design Resources&lt;/p&gt;
+
+&lt;p&gt;These resources can help you analyze previous products and learn from others about what does work and what doesn’t.&lt;/p&gt;
+
+&lt;p&gt;UX Archive
+explore how others approach designing for specific tasks&lt;/p&gt;
+
+&lt;p&gt;The authors of the site recommend you to try out the website first (before comparing any user flows). Once you have been through the application, you can use the archive to compare different design approaches for the same task. This will help you visualize all the flows and steps so you can compare the approaches more easily. Let this inspire design pattern and user flow discussions with you and your team.&lt;/p&gt;
+
+&lt;p&gt;Google Ventures has an excellent library of resources related to conducting user research. Look for articles that you think are most helpful to you.
+Blogs, Weekly Learning&lt;/p&gt;
+
+&lt;p&gt;Product Psychology (Nir Eyal and many experts on user behavior)
+UX Myths
+52 Weeks of UX&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;Articles&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://blog.production.invision.works/top-3-tips-from-our-webinar-the-7-most-common-usability-issues/&quot;&gt;Top 3 Common Usability Issues (Invision App)&lt;/a&gt; related webinar&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://blog.sortlist.com/web-design-usability-lessons-learned/&quot;&gt;The 7 Most Common Usability Issues(Invision App)&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://99designs.com/designer-blog/2014/01/15/7-unbreakable-laws-of-user-interface-design/&quot;&gt;Unbreakable Laws of User Interface Design&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://invisionapp.wistia.com/medias/6pkkh5axk3&quot;&gt;Web Design Usability Lessons Learned (AirBnB)&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://52weeksofux.com/post/531355592/design-for-delight&quot;&gt;Design for Delight (52 Weeks of UX)&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.usertesting.com/blog/2015/01/06/invest-in-ux/&quot;&gt;Why Invest in User Experience and Research?&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.quora.com/What-are-the-best-steps-to-teach-yourself-UI-UX-Design&quot;&gt;What are the best steps to teach yourself UI/UX Design (Quora)&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;Books&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;UX Lean Startups Experience Research&lt;/p&gt;
+
+&lt;p&gt;Don’t Make Me Think&lt;/p&gt;
+
+&lt;p&gt;Rocket Surgery Made Easy (How to do User Testing)&lt;/p&gt;
+
+&lt;p&gt;Information Architecture for the World Wide Web&lt;/p&gt;
+
+&lt;p&gt;A Practical Guide to Usability Testing&lt;/p&gt;
+
+&lt;p&gt;Defensive Design for the Web&lt;/p&gt;
+
+&lt;p&gt;The Persona Lifecycle: Keeping People in Mind Throughout the Product Design (Interactive Technologies)&lt;/p&gt;
+</description>
+        <pubDate>Tue, 28 Jul 2015 21:53:55 -0700</pubDate>
+        <link>localhost:4000/source/ui/ux/2015/07/28/welcome-to-jekyll%20(copy).html</link>
+        <guid isPermaLink="true">localhost:4000/source/ui/ux/2015/07/28/welcome-to-jekyll%20(copy).html</guid>
+        
+        
+        <category>source</category>
+        
+        <category>ui/ux</category>
+        
+      </item>
+    
+      <item>
+        <title>Welcome to Jekyll!</title>
+        <description>&lt;p&gt;You’ll find this post in your &lt;code&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+
+&lt;p&gt;To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+&lt;!-- more --&gt;
+Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;Tom&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints &amp;#39;Hi, Tom&amp;#39; to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://github.com/jekyll/jekyll-help&quot;&gt;Jekyll’s dedicated Help repository&lt;/a&gt;.&lt;/p&gt;
+
+</description>
+        <pubDate>Tue, 28 Jul 2015 21:53:55 -0700</pubDate>
+        <link>localhost:4000/jekyll/2015/07/28/welcome-to-jekyll%20(another%20copy).html</link>
+        <guid isPermaLink="true">localhost:4000/jekyll/2015/07/28/welcome-to-jekyll%20(another%20copy).html</guid>
+        
+        
+        <category>jekyll</category>
+        
+      </item>
+    
+      <item>
+        <title>Welcome to Jekyll!</title>
+        <description>&lt;p&gt;You’ll find this post in your &lt;code&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+
+&lt;p&gt;To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+&lt;!-- more --&gt;
+Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;Tom&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints &amp;#39;Hi, Tom&amp;#39; to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://github.com/jekyll/jekyll-help&quot;&gt;Jekyll’s dedicated Help repository&lt;/a&gt;.&lt;/p&gt;
+
+</description>
+        <pubDate>Tue, 28 Jul 2015 21:53:55 -0700</pubDate>
+        <link>localhost:4000/jekyll/2015/07/28/welcome-to-jekyll%20(6th%20copy).html</link>
+        <guid isPermaLink="true">localhost:4000/jekyll/2015/07/28/welcome-to-jekyll%20(6th%20copy).html</guid>
+        
+        
+        <category>jekyll</category>
+        
+      </item>
+    
+      <item>
+        <title>Welcome to Jekyll</title>
+        <description>&lt;p&gt;You’ll find this post in your &lt;code&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+
+&lt;p&gt;To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+&lt;!-- more --&gt;
+Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;Tom&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints &amp;#39;Hi, Tom&amp;#39; to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://github.com/jekyll/jekyll-help&quot;&gt;Jekyll’s dedicated Help repository&lt;/a&gt;.&lt;/p&gt;
+
+</description>
+        <pubDate>Tue, 28 Jul 2015 21:53:55 -0700</pubDate>
+        <link>localhost:4000/jekyll/2015/07/28/welcome-to-jekyll%20(4th%20copy).html</link>
+        <guid isPermaLink="true">localhost:4000/jekyll/2015/07/28/welcome-to-jekyll%20(4th%20copy).html</guid>
+        
+        
+        <category>jekyll</category>
+        
+      </item>
+    
+      <item>
+        <title>How to have your own website using Jekyll!</title>
+        <description>&lt;p&gt;You’ll find this post in your &lt;code&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+
+&lt;p&gt;To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+&lt;!-- more --&gt;
+Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;Tom&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints &amp;#39;Hi, Tom&amp;#39; to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://github.com/jekyll/jekyll-help&quot;&gt;Jekyll’s dedicated Help repository&lt;/a&gt;.&lt;/p&gt;
+
+</description>
+        <pubDate>Tue, 28 Jul 2015 21:53:55 -0700</pubDate>
+        <link>localhost:4000/jekyll/2015/07/28/welcome-to-jekyll%20(3rd%20copy).html</link>
+        <guid isPermaLink="true">localhost:4000/jekyll/2015/07/28/welcome-to-jekyll%20(3rd%20copy).html</guid>
+        
+        
+        <category>jekyll</category>
+        
+      </item>
+    
+  </channel>
+</rss>

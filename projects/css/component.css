@@ -13,7 +13,11 @@
 }
 
 .grid a:nth-child(odd) {
+<<<<<<< HEAD
 	margin: 30px 0 30px;
+=======
+	margin: 30px 0 -30px 0;
+>>>>>>> 31c11b8c22f3d5c432458ba60217cd9eff8f8e39
 }
 
 .grid figure {
@@ -114,8 +118,11 @@
 	opacity: 0;
 }
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 31c11b8c22f3d5c432458ba60217cd9eff8f8e39
 /* Individual styles */
 .demo-2 body {
 	background: linear-gradient(pink, #40E0D0);

@@ -1,6 +1,10 @@
 ---
 layout: post
+<<<<<<< HEAD
 title:  "Welcome to Jekyll"
+=======
+title:  "如何使用Jekyll"
+>>>>>>> 31c11b8c22f3d5c432458ba60217cd9eff8f8e39
 date:   2015-07-29 04:53:55
 categories: jekyll 
 ---

@@ -213,6 +213,7 @@ pre {
 
 
         path {
+<<<<<<< HEAD
             fill: lighten($hot-pink,20%);
         }
     }
@@ -222,5 +223,9 @@ pre {
             transition: 0.5s;
         }
 
+=======
+            fill: $grey-color;
+        }
+>>>>>>> 31c11b8c22f3d5c432458ba60217cd9eff8f8e39
     }
 }
