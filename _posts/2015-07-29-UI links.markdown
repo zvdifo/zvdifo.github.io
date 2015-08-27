@@ -1,0 +1,272 @@
+---
+layout: post
+title:  "UI/UX resources introduced by Udacity"
+date:   2015-08-2 04:53:55
+categories:  source UI/UX
+---
+
+
+前段时间上过Udacity一门新的UI/UX课，老师给了非常多学习资源，以下做个简单总结,分类很全。包括英文文章，书籍和一些网站
+
+<!-- more -->
+
+###1.Common Design Elements
+
+Below are some common terms that you’ll encounter when discussing the design of webpages and apps. 
+
+####headline
+
+Words that communicate what the company or product does; different headlines will work for different products and user goals; choose wisely.
+
+resource: [The Ultimate Home Page Headline][1]
+
+[1]: https://blog.kissmetrics.com/ultimate-home-page-headline/
+
+####Tagline
+
+Taglines contain phrases that explain the key benefits and purpose of your product. Taglines are critical because people scan websites, especially first time visitors who are just beginning to understand your product.
+
+resource: [Website Taglines][2] 
+
+resource: [Creating a Memorable Headline/Tagline: 20 Great Examples][3]
+
+[2]: http://intuitivewebsites.com/articles/website-taglines/
+[3]: http://www.1stwebdesigner.com/20-great-headline-copy/
+
+
+####value proposition
+
+A promise of value to be delivered and acknowledged and a belief from the customer that value will be delivered and experienced. A value proposition can apply to an entire organization, or parts thereof, or customer accounts, or products or services.
+
+####below the fold
+
+The content area of a screen that is not visible without scrolling; many website home pages contain additional content “below the fold”.
+
+####call to action (CTA)
+
+An instruction to the audience to provoke an immediate response, usually using an imperative verb such as “call now”, “sign up”, “buy now”, or “visit a store today”; these often take the form of buttons.
+
+resource: [Improving Conversations: Call to Action Buttons][4]
+
+[4]: http://www.copyblogger.com/call-to-action-buttons/
+
+
+------------------
+
+###2. Homepage Design
+
+[http://discussions.udacity.com/t/lesson-2-homepage-design/20405](http://discussions.udacity.com/t/lesson-2-homepage-design/20405)
+
+[15 Examples of Brilliant Homepages](http://blog.hubspot.com/blog/tabid/6307/bid/34006/15-Examples-of-Brilliant-Homepage-Design.aspx)
+
+[5 Homepage Design Best Practices](http://blog.hubspot.com/customers/bid/109553/5-Homepage-Design-Best-Practices)
+
+[9 Steps to Optimize Your Homepage](http://www.streamcreative.com/blog/bid/57063/9-Steps-to-Optimize-Your-Website-s-Homepage)
+
+[The Homepages of 20 SaaS (Software as a Service) Startups](http://outside.hotjar.com/2014/08/07/we-analyzed-the-homepages-of-30-successful-startups-and-here-is-what-we-learnt)
+
+[Design Practices to Avoid on Your Homepage](http://uxmovement.com/content/bad-design-practices-to-avoid-on-your-home-page/)
+
+[When Design Best Practices Become Performance Worst Practices](http://uxmag.com/articles/when-design-best-practices-become-performance-worst-practices)
+
+[Improving Conversions: Call to Action Buttons](http://www.copyblogger.com/call-to-action-buttons/)
+
+[A/B Testing Headlines on the Highrise Signup Page](https://signalvnoise.com/posts/1525-writing-decisions-headline-tests-on-the-highrise-signup-page)
+
+------------------
+
+###3. Sign Ups and Onboarding
+
+
+[How Popular Website Onboard Users](http://www.useronboard.com/onboarding-teardowns/)
+
+[UX Archive: Onboarding](http://uxarchive.com/tasks/onboarding)
+
+这个网站模拟了多个网站用户登陆的体验，比如facebook，pinterest，google translate等.课堂上建议把自己作为用户假想登陆时的各种问题，然后可以通过类似网站了解补充其他用户体验的问题
+
+[First Time UX](http://firsttimeux.com/)
+
+另一个模拟用户体验的网站
+
+[4 Ways to Design Better Login Screens (GoSquared Example)](http://www.fastcodesign.com/3043865/4-ways-to-design-better-login-screens)
+
+[Testing Yammers Signup Flow](https://medium.com/yammer-product/testing-yammers-signup-flow-13eeb6435a73)
+
+[5 UX Antipatterns to Avoid with Signups](http://www.90percentofeverything.com/2009/04/16/five-ux-antipatterns-to-avoid-when-designing-log-in-registration-areas/)
+
+
+[Design Review Podcast: Onboarding](http://www.designreviewpodcast.com/03/10/2015/episode-18-onboarding/)
+
+------------------
+
+###4. Forms
+
+Signup and payment forms require you to get and verify information from the user. There’s lots of advice for creating forms, and we’ve curated some of the best resources and examples from existing products and the web
+
+First, keep it simple. Users are more likely to complete forms, signup, and pay, when those forms are easy and intuitive. Clear descriptions, vertical layouts, pre-populated forms, examples, and clear calls to action can help users make sense of the form and make them more willing to spend the time to fill them out. This also means that you should only ask for as much information as you need.
+
+Second, validate user input and provide feedback Next, you can increase the chance that users succeed by designing forms by checking what user’s type and by providing corrective feedback, examples, and even suggestions. Is the user’s phone number in the correct format? Did the user choose a username that is already taken? Does the form verify input after the user finishes typing in each box? These are essential features of your form that can drive up the number of successful users.
+
+Example of inline validated form
+
+Finally, always test your forms. You can test the form yourself. Some teams have done this by a role play between a user and a browser. The browser can only respond with the copy on the page. Is the form easy to complete? Are formatting options clear? Did the user get stuck, frustrated, or lost?
+
+For more information on designing forms, check out these awesome resources:
+Why Details Matter in Payments: Conversions!
+
+The $300 Million Button On BestBuy.com, the small change of allowing people to skip sign-up during checkout resulted in $300 million extra revenue per year.
+
+Double Conversion Rates with Optional Fields ClickTale doubled their sign-up conversions from 40% to 80% with a simple change of adding an explicit and very visible “optional” label to the phone number input box.
+
+
+_Effective Form Design_
+
+[Optimizing Forms for Greater Conversion](http://blog.usabilla.com/optimizing-forms-greater-conversions/)
+
+[Extensive Guide to Web Form Usability (Smashing Magazine)](http://www.smashingmagazine.com/2011/11/extensive-guide-web-form-usability/)
+
+[Designing Form Validation the Right Way](http://webdesign.tutsplus.com/articles/user-experience-designing-form-validation-the-right-way--webdesign-681)
+
+[The Top 5 Books about Form Design](http://www.uxmatters.com/mt/archives/2010/12/the-top-5-books-about-form-design.php)
+
+
+_Focus on Mobile Forms_
+
+[Mobile Form Design Strategies](http://www.uxbooth.com/articles/mobile-form-design-strategies/)
+
+[Removing Stumbling Blocks in Mobile Forms](http://www.smashingmagazine.com/2012/05/removing-stumbling-blocks-in-mobile-forms/)
+
+[21 First Class Examples of Effective Web Form Design](https://econsultancy.com/blog/64669-21-first-class-examples-of-effective-web-form-design)
+
+
+_Payment Forms_
+
+[User Experience and the Credit Card Payment Form](http://designmodo.com/ux-credit-card-payment-form/)
+
+
+_Checkout Flows_
+
+[The First Step of Checkout (KISSmetrics blog)](https://blog.kissmetrics.com/first-step-of-checkout/)
+[Fundamental Guidelines of E-Commerce Checkout Design](http://www.smashingmagazine.com/2011/04/fundamental-guidelines-of-e-commerce-checkout-design/)
+[5 Design Tips to Prevent Shopping Cart Abandonment](http://uxmovement.com/forms/5-design-tips-to-prevent-shopping-cart-abandonment/)
+[How to Design an Ecommerce Checkout Flow that Converts](http://conversionxl.com/how-to-design-an-ecommerce-checkout-flow-that-converts/)
+
+------------------
+
+###5. Notifications
+
+
+[The Psychology of Notifications](http://www.nirandfar.com/2015/03/notifications-that-work.html)
+
+[User Friendly Notifications](http://designmodo.com/user-friendly-notifications/)
+
+[Rethinking On Site Notifications](https://viget.com/inspire/rethinking-on-site-notifications)
+
+[Notifications are a UX AntiPattern (Use Notifications for Positive Habits)](https://medium.com/@holympus/notifications-are-a-ux-anti-pattern-c4d8c9ccce39)
+
+------------------
+
+###6. user feedback and ratings
+
+
+[Better User Research through Surveys](http://uxmastery.com/better-user-research-through-surveys/)
+
+[Incorporating Customer Feedback into Your Startup Strategy](http://thenextweb.com/entrepreneur/2013/05/04/8-ways-to-incorporate-customer-feedback-into-your-startups-strategy/)
+
+[The Right Way to Ask Users to Review Your App (Circa News)](https://medium.com/circa/the-right-way-to-ask-users-to-review-your-app-9a32fd604fca)
+
+[Get Better Qualitative Data on Your User Experience with Microfeedback](http://blog.invisionapp.com/get-better-qualitative-data-on-your-user-experience-with-microfeedback/)
+
+[Increase Mobile App Reviews](https://blog.kissmetrics.com/increase-mobile-app-reviews/)
+
+[Increasing Customer Retention](https://www.getvero.com/resources/customer-retention/)
+
+------------------
+
+###7. Homepages
+
+[15 Examples of Brilliant Homepages](http://blog.hubspot.com/blog/tabid/6307/bid/34006/15-Examples-of-Brilliant-Homepage-Design.aspx)
+
+[5 Homepage Design Best Practices](http://blog.hubspot.com/customers/bid/109553/5-Homepage-Design-Best-Practices)
+
+[9 Steps to Optimize Your Homepage](http://www.streamcreative.com/blog/bid/57063/9-Steps-to-Optimize-Your-Website-s-Homepage)
+
+[The Homepages of 20 SaaS (Software as a Service) Startups](http://outside.hotjar.com/2014/08/07/we-analyzed-the-homepages-of-30-successful-startups-and-here-is-what-we-learnt)
+
+[Design Practices to Avoid on Your Homepage](http://uxmovement.com/content/bad-design-practices-to-avoid-on-your-home-page/)
+
+[When Design Best Practices Become Performance Worst Practices](http://uxmag.com/articles/when-design-best-practices-become-performance-worst-practices)
+
+[Improving Conversions: Call to Action Buttons](http://www.copyblogger.com/call-to-action-buttons/)
+
+[A/B Testing Headlines on the Highrise Signup Page](https://signalvnoise.com/posts/1525-writing-decisions-headline-tests-on-the-highrise-signup-page)
+
+------------------
+
+
+###_User Experience Design Resources_
+
+These resources can help you analyze previous products and learn from others about what does work and what doesn’t.
+
+####[UX Archive](http://uxarchive.com/)
+_explore how others approach designing for specific tasks_
+
+The authors of the site recommend you to try out the website first (before comparing any user flows). Once you have been through the application, you can use the archive to compare different design approaches for the same task. This will help you visualize all the flows and steps so you can compare the approaches more easily. Let this inspire design pattern and user flow discussions with you and your team.
+
+[Google Ventures](https://www.gv.com/) has an excellent library of resources related to conducting user research. Look for articles that you think are most helpful to you.
+(这门课的资源很多都是google ventures的工程师提供的)
+
+####Blogs, Weekly Learning
+
+[Product Psychology (Nir Eyal and many experts on user behavior)](http://www.productpsychology.com/)
+
+[UX Myths](http://uxmyths.com/)
+
+[52 Weeks of UX](http://52weeksofux.com/)
+
+####Articles
+
+[Top 3 Common Usability Issues (Invision App)][a] 
+
+[The 7 Most Common Usability Issues(Invision App)][b]
+
+[Unbreakable Laws of User Interface Design][c]
+
+[Web Design Usability Lessons Learned (AirBnB)][d]
+
+[Design for Delight (52 Weeks of UX)][e]
+
+[Why Invest in User Experience and Research?][f]
+
+[What are the best steps to teach yourself UI/UX Design (Quora)][g]
+
+[a]: http://blog.production.invision.works/top-3-tips-from-our-webinar-the-7-most-common-usability-issues/
+[b]: http://blog.sortlist.com/web-design-usability-lessons-learned/
+[c]: https://99designs.com/designer-blog/2014/01/15/7-unbreakable-laws-of-user-interface-design/
+[d]: https://invisionapp.wistia.com/medias/6pkkh5axk3
+[e]: http://52weeksofux.com/post/531355592/design-for-delight
+[f]: http://www.usertesting.com/blog/2015/01/06/invest-in-ux/
+[g]: http://www.quora.com/What-are-the-best-steps-to-teach-yourself-UI-UX-Design
+
+####Books
+
+UX Lean Startups Experience Research
+
+Don’t Make Me Think
+
+Rocket Surgery Made Easy (How to do User Testing)
+
+Information Architecture for the World Wide Web
+
+A Practical Guide to Usability Testing
+
+Defensive Design for the Web
+
+The Persona Lifecycle: Keeping People in Mind Throughout the Product Design (Interactive Technologies)
+
+
+
+
+资料来源:
+
+[Product Design__Validation and UX through Design Sprints ](https://www.udacity.com/course/product-design--ud509)

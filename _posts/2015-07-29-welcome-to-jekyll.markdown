@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "如何建立一个自己的博客——使用Jekyll"
+title:  "如何建立一个自己的博客——使用Jekyll(测试)"
 date:   2015-07-29 04:53:55
 categories: jekyll 
 ---
